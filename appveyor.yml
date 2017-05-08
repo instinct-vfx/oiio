@@ -125,7 +125,7 @@ build_script:
   - dir c:\projects\oiio\build
   - dir c:\projects\oiio\build\windows64
   - cmake --build . --config %CONFIGURATION%
-  - 7z a %APPVEYOR_BUILD_FOLDER%\dist\build.zip %APPVEYOR_BUILD_FOLDER%
+  - 7z a %APPVEYOR_BUILD_FOLDER%\dist\build.zip C:\projects
   
 artifacts:
   - path: 'dist\*.zip'
